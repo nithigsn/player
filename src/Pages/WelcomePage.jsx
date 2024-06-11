@@ -11,7 +11,7 @@ export default function WelcomePage() {
                 <div className="box">
                     <div className="home-head">
                         <div>
-                            Iocn
+                            Icon
                         </div>
 
                         <div>Electrify</div></div>
