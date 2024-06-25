@@ -190,7 +190,7 @@ p {
   justify-content: space-around;
   align-items: start;
   height: 170px;
-  width: 900px;
+  width: 60vw;
   padding: 20px;
   border-radius: 20px;
   background-image: url(./Assets/img/jb.jpg);
@@ -215,7 +215,7 @@ p {
   display: flex;
   justify-content: space-around;
   gap: 10px;
-  width: 100%;
+  width: 60vw;
   background-color: rgb(44, 45, 46);
   align-items: center;
   justify-content: center;
@@ -236,8 +236,8 @@ p {
 
 
 .artist-pic {
-  height: 120px;
-  width: 120px;
+  height: 17vh;
+  width: 8vw;
   border-radius: 10px;
 }
 
@@ -332,7 +332,7 @@ p {
   padding: 10px;
   background-color: black;
   border-radius: 20px;
-  width: 350px;
+  width: 22.8vw;
   text-align: center;
 
 }
@@ -375,7 +375,7 @@ p {
 
 .container {
   height: 50vh;
-  width: 400px;
+  width: 28vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,7 +385,7 @@ p {
 }
 
 .music-Container {
-  width: 350px;
+  width: 22.5vw;
   height: 300px;
   padding: 10px;
   display: flex;
@@ -485,5 +485,19 @@ p {
   padding: 3px 0 0 0;
   font-weight: 600;
   text-align: center;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 427px) {
+  
+  body {
+    font-size: 14px;
+  }
+  .homepage{
+    flex-direction: column;
+  }
+  
 }
 
