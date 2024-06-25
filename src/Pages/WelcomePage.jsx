@@ -1,6 +1,6 @@
 
 
-export default function WelcomePage() {
+export default function WelcomePage({setPage}) {
     return (
 
         <div className="welcome">
@@ -19,7 +19,7 @@ export default function WelcomePage() {
                         <h2>Discover and Share Your Favourite Music</h2>
                     </div>
                     <div className="inner-box">
-                        <button>Login</button>
+                        <button onClick={()=>setPage('home')}>Login</button>
                         <button>Sign Up</button></div>
                 </div>
 
