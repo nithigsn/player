@@ -9,7 +9,7 @@ import Main from './Main'
 function App() {
   return (
     <div className="App">
-  <HomePage/>
+  <Main/>
     </div>
   );
 }
