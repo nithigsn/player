@@ -1,55 +1,63 @@
+import React, { useState } from 'react';
+import './App.css'; // Make sure to include your CSS for styling
+
 const Arr = () => {
-
-    const DETAILS=[
+    const DETAILS = [
         {
-            name:"Justin Biebr",
-            song:"Lovely",
-            pic:" artist-pic jb"
+            name: "Justin Bieber",
+            song: "Lovely",
+            pic: "artist-pic jb"
         },
         {
-            name:"Lana Del Ray",
-            song:"Say Yes To Heaven",
-            pic:" artist-pic lana"
+            name: "Lana Del Rey",
+            song: "Say Yes To Heaven",
+            pic: "artist-pic lana"
         },
         {
-            name:"Kendrick Lamar",
-            song:"Humble",
-            pic:" artist-pic kdot"
+            name: "Kendrick Lamar",
+            song: "Humble",
+            pic: "artist-pic kdot"
         },
         {
-            name:"Selena Gomez",
-            song:"Back To You",
-            pic:" artist-pic selena"
+            name: "Selena Gomez",
+            song: "Back To You",
+            pic: "artist-pic selena"
         },
         {
-            name:"Drake",
-            song:"God's Plan",
-            pic:" artist-pic drake"
+            name: "Drake",
+            song: "God's Plan",
+            pic: "artist-pic drake"
         }
-    
-    
-    
-    ]
-    
+    ];
 
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleSearch = (event) => {
+        setSearchTerm(event.target.value);
+    };
+
+    const filteredDetails = DETAILS.filter(detail =>
+        detail.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        detail.song.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
     return (
-
-
-        DETAILS.map((value,index)=>{
-            return(
-                <div className="artist-container">
-                <div className={value.pic}>
+        <div>
+            <input
+                type="text"
+                placeholder="Search for an artist or song..."
+                value={searchTerm}
+                onChange={handleSearch}
+            />
+            {filteredDetails.map((value, index) => (
+                <div className="artist-container" key={index}>
+                    <div className={value.pic}></div>
+                    <h4>{value.name}</h4>
+                    <p>{value.song}</p>
                 </div>
-                <h4>{value.name}</h4>
-                <p>{value.song}</p>
-            </div>
-
-            );
-        })
-       
-
-
+            ))}
+        </div>
     );
-}
+};
+
 export default Arr;

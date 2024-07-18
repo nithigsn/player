@@ -28,72 +28,130 @@ p {
 
 
 /* Welcome Page */
-.welcome {
-  height: 100vh;
-  width: 100vw;
-  background: rgb(118, 118, 118);
-  background: radial-gradient(circle, rgba(118, 118, 118, 1) 1%, rgba(0, 0, 0, 1) 100%);
 
-}
 
-.welcome-container,
-.box {
+
+.welcome{
   display: flex;
-}
-
-.box {
-
-  justify-content: space-around;
   flex-direction: column;
-  height: 95vh;
-  width: 50vw;
-}
-
-.welcome-img {
-  height: 100vh;
-  width: 50vw;
-  display: flex;
   justify-content: center;
   align-items: center;
-
-
-}
-
-.img-box {
-  height: 96vh;
-  width: 46vw;
-  background-image: url(./Assets/img/potrait.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./Assets/img/Login-Back.jpg);
   background-size: cover;
-  border-radius: 20px;
+  
 }
 
-.home-head {
-  flex: 1;
+.login{
+  height: 50vh;
+  width: 60vw;
   display: flex;
-  justify-self: start;
+  box-shadow: 5px 5px 25px rgb(12, 12, 12);
 }
 
-.inner-box {
-  flex: 1;
+.login-left{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-
+  color: white;
+  height: 50vh;
+  width: 30vw;
+  background-image: url(./Assets/img/Login-Back.jpg);
+  background-size: cover;
+  
+}
+.login-right{
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  
 }
 
-.inner-box h2 {
+/* login container */
+.login-container {
+  position: relative;
+  margin: 20px;
+}
+
+/* login field */
+.login-field {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  color: white;
+  background-color: transparent;
+}
+
+/* login label */
+.login-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgba(247, 247, 247, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* login highlight */
+.login-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #10c5ad;
+  transition: all 0.3s ease;
+}
+.login-field::placeholder{
   color: white;
 }
-
-.inner-box button {
-  height: 30px;
-  width: 100px;
-  border-radius: 10px;
-  border: none;
-  margin-right: 10px;
+.login-field:focus::placeholder{
+  opacity: 0;
+}
+/* login field:focus styles */
+.login-field:focus + .login-label {
+  top: -20px;
+  font-size: 12px;
+  color: #ffffff;
 }
 
+.login-field:focus + .login-label + .login-highlight {
+  width: 234px;
+}
+.login-btn{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.login-btn button{
+  width: 100px;
+  border: none;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #10c5ad;
+  color: white;
+  cursor: pointer;
+}
+.login-btn button:hover{
+  background-color: #10c5ad7e;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s ease-in-out;
+}
 
 /* HomePage */
+
 
 .homepage {
   height: 100vh;
@@ -101,6 +159,7 @@ p {
   background-color: black;
   color: white;
   display: flex;
+ 
 
 
 }
@@ -354,16 +413,12 @@ p {
 .trend-songs .photo,.song-info,.rank{
   width: 33%;
 }
-
-
-
 .trend-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 .photo img{
   height: 40px;
   width: 40px;
@@ -489,15 +544,6 @@ p {
 
 
 
-/* Responsive */
-@media screen and (max-width: 427px) {
-  
-  body {
-    font-size: 14px;
-  }
-  .homepage{
-    flex-direction: column;
-  }
-  
-}
+
+
 

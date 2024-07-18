@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import HomePage from "./Pages/HomePage";
-import JustinPage from "./Pages/JustinPage";
 import WelcomePage from './Pages/WelcomePage';
 
 export default function Main() {
