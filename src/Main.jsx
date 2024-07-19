@@ -18,8 +18,6 @@ export default function Main() {
     switch (page) {
         case 'home':
             return <HomePage setPage={setPage} />;
-        // case 'justin':
-        //     return <JustinPage setPage={setPage} />;
         case 'welcome':
             return <WelcomePage setPage={setPage} />;
         default:

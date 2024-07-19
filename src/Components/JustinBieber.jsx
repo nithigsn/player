@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import musicAPI from "../Modules/musicAPI";
 
 export default function JustinBieber({ setCenterBoxType }) {

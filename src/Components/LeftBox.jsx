@@ -1,6 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const LeftBox = ({ setPage,setCenterBoxType }) => {
+const LeftBox = ({ setCenterBoxType }) => {
+    const navigate=useNavigate();
+
+
     return (
         <div className="left-box">
             
@@ -18,7 +22,7 @@ const LeftBox = ({ setPage,setCenterBoxType }) => {
 
             <div className="profile">
                 <i className="fas fa-user"></i>
-                <i className="fas fa-arrow-right-from-bracket fa-flip-horizontal" onClick={() => setPage('welcome')}></i>
+                <i className="fas fa-arrow-right-from-bracket fa-flip-horizontal" onClick={() => navigate('/')}></i>
             </div>
         </div>
     );
