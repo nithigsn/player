@@ -49,6 +49,13 @@ p {
   display: flex;
   box-shadow: 5px 5px 25px rgb(12, 12, 12);
 }
+.signup{
+  display: flex;
+}
+.signup .login-right,
+.signup .login-left{
+  height: 60vh;
+}
 
 .login-left{
   display: flex;
@@ -542,6 +549,38 @@ p {
   text-align: center;
 }
 
+
+
+/* Library Page */
+
+.librarypage{
+  height: 100vh;
+  width: 70vw;
+}
+.librarypage header{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  margin-top: 10px;
+  
+}
+.librarypage header input{
+  height: 30px;
+  outline: none;
+  background-color: transparent;
+  width: 300px;
+  color: white;
+}
+.librarypage header button{
+  height: 35px;
+  margin-left: 20px;
+  outline: none;
+  background-color: #10c5ad;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
 
 
 

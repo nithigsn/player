@@ -3,10 +3,44 @@ import { useNavigate } from "react-router-dom";
 import { userContext } from "../App";
 
 export default function Login() {
+    const { username, setUsername, password, setPassword, id, setId } = useContext(userContext);
+    const navigate = useNavigate();
 
-    const{username,setUsername,password,setPassword} =useContext(userContext);
+    async function handleLogIn() {
+        if (username !== "" && password !== "") {
 
-    const navigate=useNavigate();
+            const myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+
+            const raw = JSON.stringify({
+                "username": username,
+                "password": password
+            });
+
+            const requestOptions = {
+                method: "POST",
+                headers: myHeaders,
+                body: raw,
+                redirect: "follow"
+            };
+
+            fetch("http://localhost:3434/player/signin", requestOptions)
+                .then((response) => response.json())
+                .then((result) => {
+                    if (result.status) {
+                        console.log('Successfull Login');
+                        navigate('/home');
+                        setId(result.data.id);
+
+                    }
+                    else {
+                        alert('error');
+                    }
+                })
+
+        }
+    }
+
 
     return (
         <div className="welcome">
@@ -38,9 +72,8 @@ export default function Login() {
                         <label htmlFor="login-field" className="login-label">Enter Password</label>
                         <span className="login-highlight"></span>
                     </div>
-
                     <div className="login-btn">
-                        <button onClick={() => navigate('/home')}>Login</button>
+                        <button onClick={handleLogIn}>Login</button>
                         <button onClick={() => navigate('/signup')}>Sign Up</button>
                     </div>
                 </div>

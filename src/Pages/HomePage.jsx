@@ -3,6 +3,8 @@ import LeftBox from "../Components/LeftBox";
 import CenterBox from "../Components/CenterBox";
 import RightBox from "../Components/RIghtBox";
 import JustinBieber from "../Components/JustinBieber";
+import ProfilePage from "./ProfilePage";
+import LibraryPage from "./LibraryPage";
 
 const HomePage = ({ setPage }) => {
     // Retrieve initial centerBoxType from localStorage or default to 'home'
@@ -20,9 +22,13 @@ const HomePage = ({ setPage }) => {
     const renderCenterBox = () => {
         switch (centerBoxType) {
             case 'home':
-                return <CenterBox setPage={setPage} setCenterBoxType={setCenterBoxType} />;
+                return <CenterBox setCenterBoxType={setCenterBoxType} />;
             case 'justin':
-                return <JustinBieber setPage={setPage} setCenterBoxType={setCenterBoxType} />;
+                return <JustinBieber setCenterBoxType={setCenterBoxType} />;
+            case 'profile':
+                return <ProfilePage setCenterBoxType={setCenterBoxType} />
+            case 'library':
+                return <LibraryPage setCenterBoxType={setCenterBoxType}/>    
             default:
                 return <CenterBox setPage={setPage} />; // Default to CenterBox if no match
         }
@@ -32,7 +38,7 @@ const HomePage = ({ setPage }) => {
         <div className="homepage">
             <LeftBox setPage={setPage} setCenterBoxType={setCenterBoxType} />
             {renderCenterBox()}
-           <RightBox/>
+            <RightBox />
         </div>
     );
 }
