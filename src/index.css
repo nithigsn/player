@@ -553,7 +553,7 @@ p {
 
 /* Library Page */
 
-.librarypage{
+.librarypage,.profilepage{
   height: 100vh;
   width: 70vw;
 }

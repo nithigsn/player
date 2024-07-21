@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import LeftBox from "../Components/LeftBox";
 import CenterBox from "../Components/CenterBox";
 import RightBox from "../Components/RIghtBox";
 import JustinBieber from "../Components/JustinBieber";
 import ProfilePage from "./ProfilePage";
 import LibraryPage from "./LibraryPage";
+import { userContext } from "../App";
 
 const HomePage = ({ setPage }) => {
     // Retrieve initial centerBoxType from localStorage or default to 'home'
@@ -18,6 +19,9 @@ const HomePage = ({ setPage }) => {
         localStorage.setItem('centerBoxType', centerBoxType);
     }, [centerBoxType]);
 
+
+    const{id,setId}=useContext(userContext);
+
     // Switch case to determine which CenterBox component to render
     const renderCenterBox = () => {
         switch (centerBoxType) {
@@ -28,7 +32,7 @@ const HomePage = ({ setPage }) => {
             case 'profile':
                 return <ProfilePage setCenterBoxType={setCenterBoxType} />
             case 'library':
-                return <LibraryPage setCenterBoxType={setCenterBoxType}/>    
+                return <LibraryPage id={id}  setCenterBoxType={setCenterBoxType}/>    
             default:
                 return <CenterBox setPage={setPage} />; // Default to CenterBox if no match
         }

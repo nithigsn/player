@@ -6,7 +6,10 @@ export default function Login() {
     const { username, setUsername, password, setPassword, id, setId } = useContext(userContext);
     const navigate = useNavigate();
 
+    console.log(id);
+
     async function handleLogIn() {
+
         if (username !== "" && password !== "") {
 
             const myHeaders = new Headers();
@@ -29,8 +32,11 @@ export default function Login() {
                 .then((result) => {
                     if (result.status) {
                         console.log('Successfull Login');
+                        console.log(result.data.id);
+                        console.log(result.data.username);
                         navigate('/home');
                         setId(result.data.id);
+                       
 
                     }
                     else {
@@ -50,32 +56,37 @@ export default function Login() {
                     <h3>Login and Enjoy Your Favourite Music's</h3>
                 </div>
                 <div className="login-right">
-                    <div className="login-container">
-                        <input
-                            placeholder="Enter Username"
-                            className="login-field"
-                            type="text"
-                            value={username}
-                            onChange={(e) => setUsername(e.target.value)}
-                        />
-                        <label htmlFor="login-field" className="login-label">Enter Username</label>
-                        <span className="login-highlight"></span>
-                    </div>
-                    <div className="login-container">
-                        <input
-                            placeholder="Enter Password"
-                            className="login-field"
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                        />
-                        <label htmlFor="login-field" className="login-label">Enter Password</label>
-                        <span className="login-highlight"></span>
-                    </div>
+                    <form action="">
+                        <div className="login-container">
+                            <input
+                                placeholder="Enter Username"
+                                className="login-field"
+                                type="text"
+                                value={username}
+                                onChange={(e) => setUsername(e.target.value)}
+                            />
+                            <label htmlFor="login-field" className="login-label">Enter Username</label>
+                            <span className="login-highlight"></span>
+                        </div>
+                        <div className="login-container">
+                            <input
+                                placeholder="Enter Password"
+                                className="login-field"
+                                type="password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
+                            <label htmlFor="login-field" className="login-label">Enter Password</label>
+                            <span className="login-highlight"></span>
+                        </div>
+
+                    </form>
                     <div className="login-btn">
                         <button onClick={handleLogIn}>Login</button>
                         <button onClick={() => navigate('/signup')}>Sign Up</button>
+
                     </div>
+
                 </div>
             </div>
         </div>
