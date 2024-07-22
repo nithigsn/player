@@ -33,10 +33,10 @@ export default function CenterBox({setCenterBoxType}){
         <div className="center-box">
         <div className="header">
 
-            <i class="fa-solid fa-chevron-left"></i>
-            <i class="fa-solid fa-chevron-right"></i>
+            <i className="fa-solid fa-chevron-left"></i>
+            <i className="fa-solid fa-chevron-right"></i>
             <div className="input">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i className="fa-solid fa-magnifying-glass"></i>
 
                 <input type="text" placeholder="Search for songs, artists etc" />
 
@@ -58,9 +58,9 @@ export default function CenterBox({setCenterBoxType}){
             <div className="albums">
 
                 {
-                    DETAILS.map((value) => {
+                    DETAILS.map((value,index) => {
                         return (
-                            <div className="artist-container" onClick={()=>setCenterBoxType('justin')}>
+                            <div className="artist-container" key={index} onClick={()=>setCenterBoxType('justin')}>
                                 <div className={value.pic}>
                                 </div>
                                 <h4>{value.name}</h4>
@@ -84,7 +84,7 @@ export default function CenterBox({setCenterBoxType}){
                 <p>Company</p>
                 <div className="duration">03.22</div>
                 <div className="play">
-                    <i class="fa-solid fa-play"></i>
+                    <i className="fa-solid fa-play"></i>
                 </div>
 
 
