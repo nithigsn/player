@@ -10,6 +10,10 @@ export default function Library() {
     const { name, setName,id } = useContext(userContext);
 
     console.log(id);
+    
+ 
+     
+        
 
     //Gets User Details From DB
     useEffect(() => {
@@ -33,7 +37,7 @@ export default function Library() {
                 }
             })
 
-    }, [])
+    }, [id])
 
 
   
@@ -78,7 +82,7 @@ export default function Library() {
                     type="text"
                     placeholder="Create a Playlist"
                     value={playlistName}
-                    onChange={(e) => setPlayListName(e.target.value)}
+                    onChange={(e)=>setPlayListName(e.target.value)}
                 />
                 <button onClick={handleCreatePlaylist}>Create Playlist</button>
             </header>

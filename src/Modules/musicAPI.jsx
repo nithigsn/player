@@ -41,10 +41,52 @@ const musicAPI = [
     },
     {
       songName: 'Apna Bana Le',
-      songArtist: 'Arijit Singh',
+      songArtist: 'Justin Bieber',
       songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
       songAvatar: './Assets/Images/image7.jpg'
-    }
+    },
+    {
+      songName: 'Apna Bana Le',
+      songArtist: 'Justin Bieber',
+      songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
+      songAvatar: './Assets/Images/image7.jpg'
+    },
+    {
+      songName: 'Apna Bana Le',
+      songArtist: 'Justin Bieber',
+      songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
+      songAvatar: './Assets/Images/image7.jpg'
+    },
+    {
+      songName: 'Apna Bana Le',
+      songArtist: 'Justin Bieber',
+      songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
+      songAvatar: './Assets/Images/image7.jpg'
+    },
+    {
+      songName: 'Apna Bana Le',
+      songArtist: 'Justin Bieber',
+      songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
+      songAvatar: './Assets/Images/image7.jpg'
+    },
+    {
+      songName: 'Apna Bana Le',
+      songArtist: 'Justin Bieber',
+      songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
+      songAvatar: './Assets/Images/image7.jpg'
+    },
+    {
+      songName: 'Apna Bana Le',
+      songArtist: 'Justin Bieber',
+      songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
+      songAvatar: './Assets/Images/image7.jpg'
+    },
+    {
+      songName: 'Apna Bana Le',
+      songArtist: 'Justin Bieber',
+      songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
+      songAvatar: './Assets/Images/image7.jpg'
+    },
   ];
   
   module.exports=musicAPI;

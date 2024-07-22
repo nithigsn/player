@@ -31,7 +31,7 @@ export default function Profile() {
             })
 
 
-    }, [setName])
+    }, [id,setName])
 
 
     return (
@@ -42,15 +42,7 @@ export default function Profile() {
             <p>Name is : {name}</p>
             <h2>Playlist</h2>
             <ol>
-                {/* {
-                    playlist.map((value, index) => {
-                        return (
-                            <div key={index}>
-                                <li>{value.playlistname}</li>
-                            </div>
-                        );
-                    })
-                } */}
+          
 
             </ol>
 

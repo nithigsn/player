@@ -2,6 +2,8 @@ import musicAPI from "../Modules/musicAPI";
 
 export default function JustinBieber({ setCenterBoxType }) {
 
+    const JBSONGS = musicAPI.filter(song => song.songArtist === 'Justin Bieber');
+
 
 
     return (
@@ -15,7 +17,7 @@ export default function JustinBieber({ setCenterBoxType }) {
                 </div>
             </div>
 
-            {musicAPI.map((value, index) => (
+            {JBSONGS.map((value, index) => (
                 <div className="song" key={index} title='Play Justin Bieber Songs'>
                     <div className="song-pic">
                         <img src={value.songAvatar} alt="" />
