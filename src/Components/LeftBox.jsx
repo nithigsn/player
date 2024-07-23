@@ -2,25 +2,22 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const LeftBox = ({ setCenterBoxType }) => {
-
     const navigate = useNavigate();
 
-    function handleLogOut(){
+    function handleLogOut() {
         navigate('/');
         setCenterBoxType('home');
     }
 
-
     return (
         <div className="left-box">
-
             <div className="icon">
                 <i className="fas fa-music"></i>
             </div>
 
             <div className="pages">
                 <i className="fas fa-home" title="Home" onClick={() => setCenterBoxType('home')}></i>
-                <i className="fas fa-book-open" title="Library" onClick={()=>setCenterBoxType('library')}></i>
+                <i className="fas fa-book-open" title="Library" onClick={() => setCenterBoxType('library')}></i>
                 <i className="fas fa-radio" title="Radio"></i>
                 <i className="fas fa-music" title="Search Music"></i>
                 <i className="fa-solid fa-gear" title="Settings"></i>

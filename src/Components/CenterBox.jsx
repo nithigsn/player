@@ -87,10 +87,6 @@ export default function CenterBox({setCenterBoxType}){
                     <i className="fa-solid fa-play"></i>
                 </div>
 
-
-
-
-
             </div>
 
 

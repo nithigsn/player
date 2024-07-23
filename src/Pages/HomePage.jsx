@@ -1,50 +1,43 @@
-import React, { useState, useEffect, useContext } from "react";
-import LeftBox from "../Components/LeftBox";
+import React, { useState, useEffect } from 'react';
+import Player from "../Components/Player";
+import LeftBox from '../Components/LeftBox';
+import Justin from "../Components/Justin";
 import CenterBox from "../Components/CenterBox";
-import RightBox from "../Components/RIghtBox";
-import JustinBieber from "../Components/JustinBieber";
-import ProfilePage from "./ProfilePage";
-import LibraryPage from "./LibraryPage";
-import { userContext } from "../App";
+import Library from "./LibraryPage";
+import Profile from "./ProfilePage";
 
-const HomePage = ({ setPage }) => {
-    // Retrieve initial centerBoxType from localStorage or default to 'home'
+const HomePage = () => {
     const [centerBoxType, setCenterBoxType] = useState(() => {
-        const storedCenterBoxType = localStorage.getItem('centerBoxType');
-        return storedCenterBoxType ? storedCenterBoxType : 'home';
+        const savedType = localStorage.getItem('centerBoxType');
+        return savedType ? savedType : 'home';
     });
 
-    // Update localStorage whenever `centerBoxType` changes
     useEffect(() => {
         localStorage.setItem('centerBoxType', centerBoxType);
     }, [centerBoxType]);
 
-
-    const{id,setId}=useContext(userContext);
-
-    // Switch case to determine which CenterBox component to render
-    const renderCenterBox = () => {
+    const CenterPage = () => {
         switch (centerBoxType) {
             case 'home':
                 return <CenterBox setCenterBoxType={setCenterBoxType} />;
             case 'justin':
-                return <JustinBieber setCenterBoxType={setCenterBoxType} />;
-            case 'profile':
-                return <ProfilePage setCenterBoxType={setCenterBoxType} />
+                return <Justin setCenterBoxType={setCenterBoxType} />;
             case 'library':
-                return <LibraryPage id={id}  setCenterBoxType={setCenterBoxType}/>    
+                return <Library setCenterBoxType={setCenterBoxType} />;
+            case 'profile':
+                return <Profile setCenterBoxType={setCenterBoxType} />;
             default:
-                return <CenterBox setPage={setPage} />; // Default to CenterBox if no match
+                return <CenterBox setCenterBoxType={setCenterBoxType} />;
         }
-    }
+    };
 
     return (
         <div className="homepage">
-            <LeftBox setPage={setPage} setCenterBoxType={setCenterBoxType} />
-            {renderCenterBox()}
-            <RightBox />
+            <LeftBox setCenterBoxType={setCenterBoxType} />
+            <CenterPage />
+            <Player />
         </div>
     );
-}
+};
 
 export default HomePage;
