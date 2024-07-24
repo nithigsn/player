@@ -15,12 +15,23 @@ export default function Justin() {
         <div className="justin">
             {
                 JBSONGS.map((song, index) => (
-                    <div key={index} className="jb" onClick={() => handleSongClick(index)}>
+                    <div key={index} className="justinsong " onClick={() => handleSongClick(index)}>
+                        <div className="photo">
+                            <img src={song.songAvatar} alt="" />
+                        </div>
                         <p>{song.songName}</p>
                         <p>{song.songArtist}</p>
+                        <i className="fa-solid fa-ellipsis-vertical">
+
+                            <div className="dropdown-content">
+                                <p>Add To Playlist</p>
+                            </div>
+                        </i>
+                       
                     </div>
                 ))
             }
+
         </div>
     );
 }

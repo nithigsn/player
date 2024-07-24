@@ -161,11 +161,12 @@ p {
 
 
 .homepage {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background-color: black;
   color: white;
   display: flex;
+  
  
 
 
@@ -377,6 +378,29 @@ p {
   display: flex;
   
 }
+.justinsong{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  background-color: rgb(68, 64, 64);
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.justinsong:hover{
+  background-color: #1f241f7e;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  z-index: 999;
+
+}
+.fa-ellipsis-vertical:hover .dropdown-content{
+  display: block;
+}
+
 .song-pic img{
   height: 40px;
   width: 40px;

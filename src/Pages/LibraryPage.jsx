@@ -3,17 +3,18 @@ import { userContext } from "../App";
 
 
 export default function Library() {
+
     const [playlistName, setPlayListName] = useState('');
     const [playlist, setPlaylist] = useState([]);
 
 
-    const { name, setName,id } = useContext(userContext);
+    const { name, setName, id } = useContext(userContext);
 
     console.log(id);
-    
- 
-     
-        
+
+
+
+
 
     //Gets User Details From DB
     useEffect(() => {
@@ -23,11 +24,11 @@ export default function Library() {
             redirect: "follow"
         };
 
-        fetch("http://localhost:3434/player/"+id, requestOptions)
+        fetch("http://localhost:3434/player/" + id, requestOptions)
             .then((response) => response.json())
             .then((result) => {
                 if (result) {
-                   
+
                     setName(result.data.name)
                     setPlaylist(result.data.playlists);
 
@@ -37,10 +38,10 @@ export default function Library() {
                 }
             })
 
-    }, [id])
+    }, [id, setName])
 
 
-  
+
     //function to Create a playlistname
     function handleCreatePlaylist() {
 
@@ -67,6 +68,7 @@ export default function Library() {
                     if (result.status) {
                         console.log(result.msg);
                         console.log('Created Playlist');
+                        setPlayListName('');
                     }
                     else {
                         console.log("Failed To Create");
@@ -82,7 +84,7 @@ export default function Library() {
                     type="text"
                     placeholder="Create a Playlist"
                     value={playlistName}
-                    onChange={(e)=>setPlayListName(e.target.value)}
+                    onChange={(e) => setPlayListName(e.target.value)}
                 />
                 <button onClick={handleCreatePlaylist}>Create Playlist</button>
             </header>

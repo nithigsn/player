@@ -37,55 +37,55 @@ const musicAPI = [
       songName: 'Soch',
       songArtist: 'Hardy Sandhu',
       songSrc: './Assets/songs/SOCH(Slowed+Reverbed) __ Hardy Sandhu.webm',
-      songAvatar: './Assets/Images/image6.jpg'
+      songAvatar: './Assets/Images/jbchanges.png'
     },
     {
-      songName: 'Apna Bana Le',
+      songName: 'Ghost',
       songArtist: 'Justin Bieber',
       songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
-      songAvatar: './Assets/Images/image7.jpg'
+      songAvatar: './Assets/Images/jbjustice.png'
     },
     {
-      songName: 'Apna Bana Le',
+      songName: 'Lovely',
       songArtist: 'Justin Bieber',
       songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
-      songAvatar: './Assets/Images/image7.jpg'
+      songAvatar: './Assets/Images/jbchanges.png'
     },
     {
-      songName: 'Apna Bana Le',
+      songName: 'Baby',
       songArtist: 'Justin Bieber',
       songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
-      songAvatar: './Assets/Images/image7.jpg'
+      songAvatar: './Assets/Images/jbjustice.png'
     },
     {
-      songName: 'Apna Bana Le',
+      songName: 'Boyfriend',
       songArtist: 'Justin Bieber',
       songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
-      songAvatar: './Assets/Images/image7.jpg'
+      songAvatar: './Assets/Images/jbjustice.png'
     },
     {
-      songName: 'Apna Bana Le',
+      songName: 'Peaches ft Quavo',
       songArtist: 'Justin Bieber',
       songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
-      songAvatar: './Assets/Images/image7.jpg'
+      songAvatar: './Assets/Images/jbchanges.png'
     },
     {
-      songName: 'Apna Bana Le',
+      songName: 'Stay(with Justin Bieber)',
       songArtist: 'Justin Bieber',
       songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
-      songAvatar: './Assets/Images/image7.jpg'
+      songAvatar: './Assets/Images/jbchanges.png'
     },
     {
-      songName: 'Apna Bana Le',
+      songName: 'Love Your Self',
       songArtist: 'Justin Bieber',
       songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
-      songAvatar: './Assets/Images/image7.jpg'
+      songAvatar: './Assets/Images/jbjustice.png'
     },
     {
-      songName: 'Apna Bana Le',
+      songName: 'What do you mean ?',
       songArtist: 'Justin Bieber',
       songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
-      songAvatar: './Assets/Images/image7.jpg'
+      songAvatar: './Assets/Images/jbchanges.png'
     },
   ];
   

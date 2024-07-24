@@ -4,7 +4,8 @@ import { userContext } from "../App";
 
 export default function SignUp() {
     const navigate = useNavigate();
-    const { name, setName, email, setEmail, username, setUsername, password, setPassword, confirmPassword, setConfirmPassword, id, setId } = useContext(userContext);
+    
+    const { name, setName, email, setEmail, username, setUsername, password, setPassword, confirmPassword, setConfirmPassword,  setId } = useContext(userContext);
 
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
