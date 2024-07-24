@@ -18,15 +18,17 @@ const SearchSongs = () => {
         : [];
 
     return (
-        <div>
+        <div className=''>
             <input
                 type="text"
                 placeholder="Search for an artist or song..."
                 value={searchTerm}
                 onChange={handleSearch}
+                className=''
+
             />
             {filteredDetails.map((value, index) => (
-                <div className="artist-container" key={index}>
+                <div className="" key={index}>
                     {/* <img src={value.songAvatar} alt={`${value.songArtist} avatar`} className="artist-avatar" /> */}
                     <h4>{value.songName}</h4>
                     <p>{value.songArtist}</p>

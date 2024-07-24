@@ -8,14 +8,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-i{
+
+i {
   cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 h4 {
   font-size: 15px;
@@ -31,7 +28,7 @@ p {
 
 
 
-.welcome{
+.welcome {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,24 +37,26 @@ p {
   width: 100vw;
   background-image: url(./Assets/img/Login-Back.jpg);
   background-size: cover;
-  
+
 }
 
-.login{
+.login {
   height: 50vh;
   width: 60vw;
   display: flex;
   box-shadow: 5px 5px 25px rgb(12, 12, 12);
 }
-.signup{
+
+.signup {
   display: flex;
 }
+
 .signup .login-right,
-.signup .login-left{
+.signup .login-left {
   height: 60vh;
 }
 
-.login-left{
+.login-left {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,9 +66,10 @@ p {
   width: 30vw;
   background-image: url(./Assets/img/Login-Back.jpg);
   background-size: cover;
-  
+
 }
-.login-right{
+
+.login-right {
   display: flex;
   flex-direction: column;
   height: 50vh;
@@ -78,7 +78,7 @@ p {
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(10px);
-  
+
 }
 
 /* login container */
@@ -121,28 +121,33 @@ p {
   background-color: #10c5ad;
   transition: all 0.3s ease;
 }
-.login-field::placeholder{
+
+.login-field::placeholder {
   color: white;
 }
-.login-field:focus::placeholder{
+
+.login-field:focus::placeholder {
   opacity: 0;
 }
+
 /* login field:focus styles */
-.login-field:focus + .login-label {
+.login-field:focus+.login-label {
   top: -20px;
   font-size: 12px;
   color: #ffffff;
 }
 
-.login-field:focus + .login-label + .login-highlight {
+.login-field:focus+.login-label+.login-highlight {
   width: 234px;
 }
-.login-btn{
+
+.login-btn {
   width: 50%;
   display: flex;
   justify-content: space-around;
 }
-.login-btn button{
+
+.login-btn button {
   width: 100px;
   border: none;
   outline: none;
@@ -152,7 +157,8 @@ p {
   color: white;
   cursor: pointer;
 }
-.login-btn button:hover{
+
+.login-btn button:hover {
   background-color: #10c5ad7e;
   transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s ease-in-out;
 }
@@ -166,8 +172,8 @@ p {
   background-color: black;
   color: white;
   display: flex;
-  
- 
+
+
 
 
 }
@@ -365,20 +371,23 @@ p {
   background-image: url(./Assets/img/justin.jpg);
   background-size: cover;
   border-radius: 50%;
-  
+
 }
-.justin{
+
+.justin {
   background-color: black;
   padding: 10px;
   width: 65vw;
   height: 97vh;
   border-radius: 50%;
 }
-.justin .header{
+
+.justin .header {
   display: flex;
-  
+
 }
-.justinsong{
+
+.justinsong {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -388,20 +397,23 @@ p {
   margin-top: 10px;
   cursor: pointer;
 }
-.justinsong:hover{
+
+.justinsong:hover {
   background-color: #1f241f7e;
 }
-.dropdown-content{
+
+.dropdown-content {
   display: none;
   position: absolute;
   z-index: 999;
 
 }
-.fa-ellipsis-vertical:hover .dropdown-content{
+
+.fa-ellipsis-vertical:hover .dropdown-content {
   display: block;
 }
 
-.song-pic img{
+.song-pic img {
   height: 40px;
   width: 40px;
   object-fit: cover;
@@ -422,7 +434,6 @@ p {
   padding: 10px;
   background-color: black;
   border-radius: 20px;
-  width: 22.8vw;
   text-align: center;
 
 }
@@ -437,20 +448,26 @@ p {
   width: 340px;
   cursor: pointer;
 }
-.trend-songs:hover{
+
+.trend-songs:hover {
   transform: scale(0.9);
   transition: transform 0.5s ease-in-out;
 }
-.trend-songs .photo,.song-info,.rank{
+
+.trend-songs .photo,
+.song-info,
+.rank {
   width: 33%;
 }
+
 .trend-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.photo img{
+
+.photo img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -467,7 +484,7 @@ p {
   align-items: center;
   color: rgb(250, 250, 250);
   font-family: 'Poppins';
- 
+
 }
 
 .music-Container {
@@ -481,8 +498,8 @@ p {
   text-align: center;
   border-radius: 36px;
   box-shadow: 0 0 20px rgba(26, 26, 26, 0.1),
-      0 0 40px rgba(26, 26, 26, 0.1),
-      0 0 80px rgba(26, 26, 26, 0.1);
+    0 0 40px rgba(26, 26, 26, 0.1),
+    0 0 80px rgba(26, 26, 26, 0.1);
   backdrop-filter: blur(15px);
   font-weight: 600;
   background-color: black;
@@ -518,11 +535,11 @@ p {
 
   0%,
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 
   50% {
-      transform: scale(1.03);
+    transform: scale(1.03);
   }
 }
 
@@ -545,7 +562,7 @@ p {
 .playBtn {
   font-size: 32px;
   margin: 8px 10px;
-  
+
   cursor: pointer;
   font-weight: 400;
 }
@@ -577,27 +594,34 @@ p {
 
 /* Library Page */
 
-.librarypage,.profilepage{
+.librarypage,
+.profilepage {
   height: 100vh;
-  width: 70vw;
+  width: 65vw;
 }
-.librarypage header{
+
+.librarypage header {
   display: flex;
   position: relative;
   width: 100%;
   height: 50px;
   justify-content: center;
   margin-top: 10px;
-  
+
 }
-.librarypage header input{
+
+.librarypage header input {
   height: 30px;
   outline: none;
   background-color: transparent;
   width: 300px;
   color: white;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
 }
-.librarypage header button{
+
+.librarypage header button {
   height: 35px;
   margin-left: 20px;
   outline: none;
@@ -605,8 +629,3 @@ p {
   color: rgb(0, 0, 0);
   border-radius: 10px;
 }
-
-
-
-
-
