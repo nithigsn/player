@@ -38,7 +38,7 @@ export default function Library() {
                 }
             })
 
-    }, [id, setName])
+    }, [id, playlist])
 
 
 
@@ -96,7 +96,7 @@ export default function Library() {
                     {
                         playlist.map((value, index) => {
                             return (
-                                <div key={index} className="playlist-li">
+                                <div key={index} className="flex w-80 justify-around">
                                     <li>{value.playlistname}</li>
                                     <button>View</button>
                                     <button>Delete</button>

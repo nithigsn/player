@@ -1,7 +1,7 @@
 export default function SettingPage() {
     return (
 
-        <div className="settings">
+        <div className="settings ">
 
             <h4>Settings Page</h4>
 

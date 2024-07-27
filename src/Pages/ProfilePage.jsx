@@ -4,7 +4,9 @@ import { userContext } from "../App";
 export default function Profile() {
 
     const { name, setName, id } = useContext(userContext);
+    const [about, setAbout] = useState('');
     const [playlist, setPlaylist] = useState();
+
 
 
 
@@ -20,7 +22,8 @@ export default function Profile() {
             .then((response) => response.json())
             .then((result) => {
                 if (result) {
-                    setName(result.data.name)
+                    setName(result.data.name);
+                    setAbout(result.data.about);
                     setPlaylist(result.data.playlists);
                     console.log(result.data.playlists);
 
@@ -31,7 +34,7 @@ export default function Profile() {
             })
 
 
-    }, [id,setName])
+    }, [id, setName])
 
 
     return (
@@ -40,9 +43,10 @@ export default function Profile() {
 
 
             <p>Name is : {name}</p>
+            <p>{about}</p>
             <h2>Playlist</h2>
             <ol>
-          
+
 
             </ol>
 
