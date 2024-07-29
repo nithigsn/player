@@ -4,6 +4,7 @@ import { createContext, useState, useEffect } from 'react';
 import LoginPage from './Pages/LoginPage';
 import SignUpPage from './Pages/SignUpPage';
 import ProfilePage from './Pages/ProfilePage';
+import Player from './Components/Player';
 
 
 export const userContext = createContext();

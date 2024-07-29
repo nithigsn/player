@@ -78,15 +78,16 @@ export default function Library() {
     }
 
     return (
-        <div className="librarypage">
-            <header>
+        <div className="librarypage h-screen w-[65vw]">
+            <header className="flex relative w-full justify-center mt-[10px] ">
                 <input
                     type="text"
                     placeholder="Create a Playlist"
                     value={playlistName}
                     onChange={(e) => setPlayListName(e.target.value)}
+                    className="h-8 w-[300px] outline-none bg-transparent  rounded-lg p-1 border-[1px]"
                 />
-                <button onClick={handleCreatePlaylist}>Create Playlist</button>
+                <button className="h-[35px] ml-[20px] outline-none bg-[#10c5ad] text-black rounded-e-xl" onClick={handleCreatePlaylist}>Create Playlist</button>
             </header>
 
 

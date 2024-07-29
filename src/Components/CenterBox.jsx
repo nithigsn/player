@@ -52,7 +52,7 @@ export default function CenterBox({ setCenterBoxType }) {
 
                 <h3 className="mt-5 mb-5">Artists & Albums</h3>
 
-                <div className="albums flex justify-around gap-[10px] w-[60vw] items-center rounded">
+                <div className="albums flex justify-evenly w-[60vw] items-center rounded">
 
                     {
                         DETAILS.map((value, index) => {

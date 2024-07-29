@@ -301,32 +301,11 @@ p {
   width: 33%;
 }
 
-.trend-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.photo img {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-}
 
 /* ------------------------------------------------------Player------------------------------------------------------- */
 
 
-.container {
-  height: 50vh;
-  width: 28vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(250, 250, 250);
-  font-family: 'Poppins';
 
-}
 
 .music-Container {
   width: 22.5vw;
@@ -341,7 +320,6 @@ p {
   box-shadow: 0 0 20px rgba(26, 26, 26, 0.1),
     0 0 40px rgba(26, 26, 26, 0.1),
     0 0 80px rgba(26, 26, 26, 0.1);
-  backdrop-filter: blur(15px);
   font-weight: 600;
   background-color: black;
 }
@@ -433,40 +411,3 @@ p {
 
 
 
-/* Library Page */
-
-.librarypage,
-.profilepage {
-  height: 100vh;
-  width: 65vw;
-}
-
-.librarypage header {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 50px;
-  justify-content: center;
-  margin-top: 10px;
-
-}
-
-.librarypage header input {
-  height: 30px;
-  outline: none;
-  background-color: transparent;
-  width: 300px;
-  color: white;
-  border: 1px solid white;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-.librarypage header button {
-  height: 35px;
-  margin-left: 20px;
-  outline: none;
-  background-color: #10c5ad;
-  color: rgb(0, 0, 0);
-  border-radius: 10px;
-}

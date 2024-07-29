@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Player from "../Components/Player";
+import Player from "../Components/RIghtBox";
 import LeftBox from '../Components/LeftBox';
 import Justin from "../Components/Justin";
 import CenterBox from "../Components/CenterBox";
 import Library from "./LibraryPage";
-import Profile from "./ProfilePage";
 import SearchSongs from './SearchSongs';
+import RightBox from '../Components/RIghtBox';
 
 const HomePage = () => {
     const [centerBoxType, setCenterBoxType] = useState(() => {
@@ -26,7 +26,7 @@ const HomePage = () => {
             case 'library':
                 return <Library setCenterBoxType={setCenterBoxType} />;
             case 'profile':
-                return <Profile setCenterBoxType={setCenterBoxType} />;
+                return <RightBox setCenterBoxType={setCenterBoxType} />;
             case 'search':
                 return <SearchSongs />
             default:
@@ -35,10 +35,10 @@ const HomePage = () => {
     };
 
     return (
-        <div className="homepage flex h-full w-screen bg-black text-white ">
+        <div className="homepage flex h-screen w-screen bg-black text-white ">
             <LeftBox setCenterBoxType={setCenterBoxType} />
             <CenterPage />
-            <Player />
+            <RightBox />
         </div>
     );
 };
