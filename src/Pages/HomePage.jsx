@@ -35,7 +35,7 @@ const HomePage = () => {
     };
 
     return (
-        <div className="homepage">
+        <div className="homepage flex h-full w-screen bg-black text-white ">
             <LeftBox setCenterBoxType={setCenterBoxType} />
             <CenterPage />
             <Player />

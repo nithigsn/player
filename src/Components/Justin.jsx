@@ -12,10 +12,11 @@ export default function Justin() {
     };
 
     return (
-        <div className="justin">
+        <div className="justin bg-black p-3 w-[65vw] h-[97vh]  ">
             {
                 JBSONGS.map((song, index) => (
-                    <div key={index} className="justinsong " onClick={() => handleSongClick(index)}>
+                    <div key={index} className="justinsong flex items-center justify-around gap-2 rounded mt-[10px] cursor-pointer hover:bg-[#1f241f7e]  "
+                     onClick={() => handleSongClick(index)}>
                         <div className="photo">
                             <img src={song.songAvatar} alt="" />
                         </div>

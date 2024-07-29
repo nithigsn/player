@@ -8,9 +8,9 @@ export default function Library() {
     const [playlist, setPlaylist] = useState([]);
 
 
-    const { name, setName, id } = useContext(userContext);
+    const { setName, id } = useContext(userContext);
 
-    console.log(id);
+
 
 
 
@@ -38,7 +38,7 @@ export default function Library() {
                 }
             })
 
-    }, [id, playlist])
+    }, [id, setName, playlist])
 
 
 

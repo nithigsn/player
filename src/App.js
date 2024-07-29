@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
-import Error from './Pages/Error';
-import { createContext, useState,useEffect } from 'react';
+import { createContext, useState, useEffect } from 'react';
 import LoginPage from './Pages/LoginPage';
 import SignUpPage from './Pages/SignUpPage';
 import ProfilePage from './Pages/ProfilePage';
@@ -54,7 +53,7 @@ function App() {
           <Route path='/signup' element={<SignUpPage />} />
           <Route path='/home' element={<HomePage />} />
           <Route path='/profile' element={<ProfilePage />} />
-          <Route path='*' element={<Error />} />
+          <Route path='*' element={<HomePage />} />
         </Routes>
       </BrowserRouter>
     </userContext.Provider>

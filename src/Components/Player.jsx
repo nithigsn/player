@@ -21,17 +21,19 @@ function Player() {
     } = useMusic();
 
     return (
-        <div className="right-box">
+        <div className="right-box h-screen w-[28vw] flex flex-col items-center bg-[#212121]">
             <div className="trend-wrap">
                 <div className="trend-heading">
                     <h3>Trending Songs</h3>
                 </div>
-                <div className="trending-songs">
+                <div className="trending-songs h-[270px] p-[10px] bg-black rounded-lg text-center">
                     {
                         musicAPI.slice(0, 4).map((value, index) => (
-                            <div className="trend-songs" key={index} onClick={() => updateCurrentMusicDetails(index)}>
+                            <div className="trend-songs"
+                                key={index}
+                                onClick={() => updateCurrentMusicDetails(index)}>
                                 <div className="photo">
-                                  <img src={value.songAvatar} alt="" />
+                                    <img src={value.songAvatar} alt="" />
                                 </div>
                                 <div className="song-info">
                                     <p>{value.songArtist}</p>
