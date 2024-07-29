@@ -6,6 +6,8 @@ import CenterBox from "../Components/CenterBox";
 import Library from "./LibraryPage";
 import SearchSongs from './SearchSongs';
 import RightBox from '../Components/RIghtBox';
+import ProfilePage from './ProfilePage';
+import SettingPage from './SettingPage';
 
 const HomePage = () => {
     const [centerBoxType, setCenterBoxType] = useState(() => {
@@ -26,9 +28,11 @@ const HomePage = () => {
             case 'library':
                 return <Library setCenterBoxType={setCenterBoxType} />;
             case 'profile':
-                return <RightBox setCenterBoxType={setCenterBoxType} />;
+                return <ProfilePage setCenterBoxType={setCenterBoxType} />;
             case 'search':
-                return <SearchSongs />
+                return <SearchSongs />;
+            case 'settings':
+                return <SettingPage/>;    
             default:
                 return <CenterBox setCenterBoxType={setCenterBoxType} />;
         }

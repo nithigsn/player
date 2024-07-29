@@ -18,7 +18,7 @@ export default function Justin() {
                     <div key={index} className="justinsong flex items-center justify-around gap-2 rounded mt-[10px] cursor-pointer hover:bg-[#1f241f7e]  "
                      onClick={() => handleSongClick(index)}>
                         <div className="photo">
-                            <img src={song.songAvatar} alt="" />
+                            <img src={song.songAvatar} alt="" className="h-10 w-10 rounded-sm"/>
                         </div>
                         <p>{song.songName}</p>
                         <p>{song.songArtist}</p>

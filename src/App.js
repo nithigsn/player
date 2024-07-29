@@ -5,6 +5,7 @@ import LoginPage from './Pages/LoginPage';
 import SignUpPage from './Pages/SignUpPage';
 import ProfilePage from './Pages/ProfilePage';
 import Player from './Components/Player';
+import SettingPage from './Pages/SettingPage';
 
 
 export const userContext = createContext();
@@ -54,6 +55,7 @@ function App() {
           <Route path='/signup' element={<SignUpPage />} />
           <Route path='/home' element={<HomePage />} />
           <Route path='/profile' element={<ProfilePage />} />
+          <Route path='/setting' element={<SettingPage/>}/>
           <Route path='*' element={<HomePage />} />
         </Routes>
       </BrowserRouter>

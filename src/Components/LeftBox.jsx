@@ -26,7 +26,7 @@ const LeftBox = ({ setCenterBoxType }) => {
                 <i className="fas fa-book-open" title="Library" onClick={() => setCenterBoxType('library')}></i>
                 <i className="fas fa-radio" title="Radio"></i>
                 <i className="fas fa-music" title="Search Music" onClick={() => setCenterBoxType('search')}></i>
-                <i className="fa-solid fa-gear" title="Settings"></i>
+                <i className="fa-solid fa-gear" title="Settings" onClick={()=>setCenterBoxType('settings')}></i>
             </div>
 
             <div className="profile flex flex-col justify-evenly items-center h-[212.11px]">
