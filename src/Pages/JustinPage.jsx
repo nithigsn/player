@@ -1,4 +1,4 @@
-import JustinBieber from '../Components/JustinBieber'
+import Justin from '../Components/Justin'
 import LeftBox from '../Components/LeftBox'
 import RightBox from '../Components/RIghtBox';
 
@@ -8,7 +8,7 @@ export default function JustinPage() {
 
         <div className="homepage">
             <LeftBox />
-            <JustinBieber  />
+            <Justin  />
             <RightBox />
         </div>
 
