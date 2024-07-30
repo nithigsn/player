@@ -18,7 +18,7 @@ export default function Justin() {
 
                 <p>Verified Artist</p>
                 <h1 className="text-3xl">Justin Bieber</h1>
-               
+
 
 
 
@@ -28,15 +28,16 @@ export default function Justin() {
             <div className=" flex flex-col gap-y-3 mt-6" >
                 {
                     JBSONGS.map((song, index) => (
-                        <div key={index} className="justinsong flex items-center justify-around  rounded   cursor-pointer hover:bg-[#1f241f7e]  "
+                        <div key={index} className="flex justify-around "
                             onClick={() => handleSongClick(index)}>
-                            <div className="photo">
-                                <img src={song.songAvatar} alt="" className="h-10 w-10 rounded-sm" />
-                            </div>
-                            <p>{song.songName}</p>
-                            <p>{song.songArtist}</p>
-                            <i className="fa-solid fa-ellipsis-vertical">
 
+                            <img src={song.songAvatar} alt="" className="h-10 w-10 rounded-sm " />
+
+
+                            <p className="w-48">{song.songName}</p>
+                            <p className="w-48">{song.songArtist}</p>
+
+                            <i className="fa-solid fa-ellipsis-vertical">
                                 <div className="dropdown-content">
                                     <p>Add To Playlist</p>
                                 </div>

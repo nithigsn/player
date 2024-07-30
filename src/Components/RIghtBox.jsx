@@ -26,10 +26,10 @@ function RightBox() {
                 <div className="trend-heading">
                     <h3 className='mt-3 mb-3'>Trending Songs</h3>
                 </div>
-                <div className="trending-songs h-[270px] p-[10px] bg-black rounded-lg text-center">
+                <div className="trending-songs h-[270px] p-[10px] bg-black rounded-lg text-center flex flex-col gap-4">
                     {
                         musicAPI.slice(0, 4).map((value, index) => (
-                            <div className="trend-songs"
+                            <div className="trend-songs flex justify-around bg-two w-[340px] cursor-pointer p-1 rounded items-center"
                                 key={index}
                                 onClick={() => updateCurrentMusicDetails(index)}>
                                 <div className="photo">

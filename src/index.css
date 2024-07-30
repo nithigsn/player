@@ -143,44 +143,10 @@ p {
 }
 
 /* HomePage */
-
-
-
-
-.albums {
-  background-color: rgb(44, 45, 46);
-}
-
-
 .artist-pic {
   height: 17vh;
   width: 8vw;
   border-radius: 10px;
-}
-
-
-
-.artist-container h4,
-p {
-  margin: 2px;
-  width: 150px;
-  text-align: center;
-}
-
-
-
-.song {
-  display: flex;
-  height: 50px;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgb(44, 45, 46);
-  border-radius: 20px;
-  cursor: pointer;
-  color: white;
-  margin-top: 5px;
-
 }
 
 .song-pic {
@@ -211,17 +177,6 @@ p {
 }
 
 
-
-.trend-songs {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 10px;
-  background-color: rgb(44, 45, 46);
-  border-radius: 10px;
-  padding: 5px;
-  width: 340px;
-  cursor: pointer;
-}
 
 .trend-songs:hover {
   transform: scale(0.9);

@@ -52,7 +52,7 @@ export default function CenterBox({ setCenterBoxType }) {
 
                 <h3 className="mt-5 mb-5">Artists & Albums</h3>
 
-                <div className="albums flex justify-evenly w-[60vw] items-center rounded">
+                <div className="albums flex justify-evenly w-[60vw] items-center rounded bg-two">
 
                     {
                         DETAILS.map((value, index) => {
@@ -61,6 +61,7 @@ export default function CenterBox({ setCenterBoxType }) {
                                     key={index}
                                     onClick={() => setCenterBoxType('justin')}>
                                     <div className={value.pic}>
+
                                     </div>
                                     <h4 className="mt-1">{value.name}</h4>
                                     <p>{value.album}</p>
