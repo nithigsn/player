@@ -40,12 +40,12 @@ export default function CenterBox({ setCenterBoxType }) {
                 </div>
             </div>
             <div className="home-wrap flex flex-col items-center mt-5">
-                <div className="info flex flex-col justify-around items-start h-[170px] w-[60vw] p-[20px] rounded ">
+                <div className="info bg-jb flex flex-col justify-around items-start h-[170px] w-[60vw] p-[20px] rounded ">
                     <h3>Artist Of The Month</h3>
                     <h2>Justin Bieber</h2>
                     <div className="info-btn">
-                        <button>View Songs</button>
-                        <button className="album ml-3">View Albums</button>
+                        <button className="in-btn">View Songs</button>
+                        <button className="in-btn ml-3">View Albums</button>
                     </div>
                 </div>
 

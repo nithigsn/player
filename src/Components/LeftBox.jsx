@@ -16,7 +16,7 @@ const LeftBox = ({ setCenterBoxType }) => {
 
 
     return (
-        <div className="left-box flex flex-col h-screen w-[107px] ">
+        <div className="left-box flex flex-col h-screen w-[107px] bg-two ">
             <div className="flex-1 flex items-center justify-center">
                 <i className="fas fa-music"></i>
             </div>
