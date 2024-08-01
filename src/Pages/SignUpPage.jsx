@@ -40,7 +40,7 @@ export default function SignUp() {
             redirect: "follow"
         };
 
-        fetch("http://localhost:3434/player/signup", requestOptions)
+        fetch("https://player-backend.vercel.app/player/signup", requestOptions)
             .then(response => response.json())
             .then(result => {
                 setLoading(false);

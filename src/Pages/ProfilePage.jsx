@@ -18,7 +18,7 @@ export default function Profile() {
             redirect: "follow"
         };
 
-        fetch("http://localhost:3434/player/" + id, requestOptions)
+        fetch("https://player-backend.vercel.app/player/" + id, requestOptions)
             .then((response) => response.json())
             .then((result) => {
                 if (result) {

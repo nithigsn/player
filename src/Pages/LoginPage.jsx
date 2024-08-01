@@ -27,7 +27,7 @@ export default function Login() {
                 redirect: "follow"
             };
 
-            fetch("http://localhost:3434/player/signin", requestOptions)
+            fetch("https://player-backend.vercel.app/player/signin", requestOptions)
                 .then((response) => response.json())
                 .then((result) => {
                     if (result.status) {

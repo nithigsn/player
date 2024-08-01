@@ -24,7 +24,7 @@ export default function Library() {
             redirect: "follow"
         };
 
-        fetch("http://localhost:3434/player/" + id, requestOptions)
+        fetch("https://player-backend.vercel.app/player/" + id, requestOptions)
             .then((response) => response.json())
             .then((result) => {
                 if (result) {
@@ -62,7 +62,7 @@ export default function Library() {
                 redirect: "follow"
             };
 
-            fetch("http://localhost:3434/player/playlist", requestOptions)
+            fetch("https://player-backend.vercel.app/player/playlist", requestOptions)
                 .then((response) => response.json())
                 .then((result) => {
                     if (result.status) {
