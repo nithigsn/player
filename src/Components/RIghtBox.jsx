@@ -23,7 +23,7 @@ function RightBox() {
     return (
         <div>
 
-            <div className="right-box h-[87vh] w-[28vw] flex flex-col items-center bg-[#212121] ">
+            <div className="right-box hidden sm:flex flex-col items-center bg-[#212121]h-[87vh] w-[28vw] ">
 
                 <div className="trend-wrap flex flex-col items-center justify-center">
                     <div className="trend-heading">

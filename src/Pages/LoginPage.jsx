@@ -55,6 +55,7 @@ export default function Login() {
                     <h1>Hello People</h1>
                     <h3>Login and Enjoy Your Favourite Music's</h3>
                 </div>
+                
                 <div className="login-right h-[50vh]">
                     <form action="">
                         <div className="login-container">
