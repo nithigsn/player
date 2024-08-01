@@ -2,6 +2,7 @@ import musicAPI from "../Modules/musicAPI";
 import { useMusic } from "../Context/MusicContext";
 
 export default function Justin() {
+    
     const { updateCurrentMusicDetails } = useMusic();
 
     const JBSONGS = musicAPI.filter(song => song.songArtist === 'Justin Bieber');
@@ -28,7 +29,7 @@ export default function Justin() {
             <div className=" flex flex-col gap-y-3 mt-6" >
                 {
                     JBSONGS.map((song, index) => (
-                        <div key={index} className="flex justify-around "
+                        <div key={index} className="flex justify-around  items-center cursor-pointer hover:bg-two"
                             onClick={() => handleSongClick(index)}>
 
                             <img src={song.songAvatar} alt="" className="h-10 w-10 rounded-sm " />
