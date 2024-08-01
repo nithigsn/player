@@ -21,33 +21,38 @@ function RightBox() {
     } = useMusic();
 
     return (
-        <div className="right-box h-screen w-[28vw] flex flex-col items-center bg-[#212121]">
-            <div className="trend-wrap flex flex-col items-center justify-center">
-                <div className="trend-heading">
-                    <h3 className='mt-3 mb-3'>Trending Songs</h3>
-                </div>
-                <div className="trending-songs h-[270px] p-[10px] bg-black rounded-lg text-center flex flex-col gap-4">
-                    {
-                        musicAPI.slice(0, 4).map((value, index) => (
-                            <div className="trend-songs flex justify-around bg-two w-[340px] cursor-pointer p-1 rounded items-center"
-                                key={index}
-                                onClick={() => updateCurrentMusicDetails(index)}>
-                                <div className="photo">
-                                    <img className='h-[40px] w-[40px] rounded-full' src={value.songAvatar} alt="" />
-                                </div>
-                                <div className="song-info">
-                                    <p>{value.songArtist}</p>
-                                    <p>{value.songName}</p>
-                                </div>
-                                <div className="rank">
-                                    <p>{value.songRanks}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
+        <div>
 
+            <div className="right-box h-[87vh] w-[28vw] flex flex-col items-center bg-[#212121] ">
+
+                <div className="trend-wrap flex flex-col items-center justify-center">
+                    <div className="trend-heading">
+                        <h3 className='mt-3 mb-3'>Trending Songs</h3>
+                    </div>
+                    <div className="trending-songs h-full p-[10px] bg-black rounded-lg text-center flex flex-col gap-4">
+                        {
+                            musicAPI.slice(0, 10).map((value, index) => (
+                                <div className="trend-songs flex justify-around bg-two w-[340px] cursor-pointer p-1 rounded items-center"
+                                    key={index}
+                                    onClick={() => updateCurrentMusicDetails(index)}>
+                                    <div className="photo">
+                                        <img className='h-[40px] w-[40px] rounded-full' src={value.songAvatar} alt="" />
+                                    </div>
+                                    <div className="song-info">
+                                        <p>{value.songArtist}</p>
+                                        <p>{value.songName}</p>
+                                    </div>
+                                    <div className="rank">
+                                        <p>{value.songRanks}</p>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+
+
+                {/* 
             <div className="container h-2/4 w-[28vw] flex justify-center items-center ">
                 <audio src={currentMusicDetails.songSrc} ref={currentAudio} onEnded={handleNextSong} onTimeUpdate={handleAudioUpdate}></audio>
                 <div className="music-Container">
@@ -65,18 +70,19 @@ function RightBox() {
                         <i className='fa-solid fa-forward musicControler' onClick={handleNextSong}></i>
                     </div>
                 </div>
+            </div> */}
+
             </div>
 
-
-{/* 
-            <div className="h-[13vh] w-[100%] bg-black  fixed  bottom-0 text-white">
+            <div className="h-[13vh] w-full bg-black  fixed left-0 bottom-0 text-white z-10">
 
                 <audio src={currentMusicDetails.songSrc} ref={currentAudio} onEnded={handleNextSong} onTimeUpdate={handleAudioUpdate}></audio>
 
-                <div className="flex">
+                <div className="flex items-center ">
 
-                    <img src={currentMusicDetails.songAvatar} alt="song Avatar" className="h-[13vh] " />
-                    <div className="h-[13vh] flex flex-col justify-center">
+                    <img src={currentMusicDetails.songAvatar} alt="song Avatar" className="h-[107px] w-[107px] " />
+
+                    <div className="h-[13vh] w-80 flex flex-col justify-center ml-2">
                         <p className=''>{currentMusicDetails.songName}</p>
                         <p className=''>{currentMusicDetails.songArtist}</p>
                     </div>
@@ -94,15 +100,18 @@ function RightBox() {
                             <p className=''>{musicTotalLength}</p>
                         </div>
                     </div>
-
-
                 </div>
-            </div> */}
 
-
-
+            </div>
 
         </div>
+
+
+
+
+
+
+
     );
 }
 

@@ -9,10 +9,10 @@ export default function SignUp() {
     const [error, setError] = useState('');
 
     const navigate = useNavigate();
-    
-    const { name, setName, email, setEmail, username, setUsername, password, setPassword, confirmPassword, setConfirmPassword,  setId } = useContext(userContext);
 
-   
+    const { name, setName, email, setEmail, username, setUsername, password, setPassword, confirmPassword, setConfirmPassword, setId } = useContext(userContext);
+
+
 
     function handleSignUp() {
         if (password !== confirmPassword) {
@@ -61,7 +61,7 @@ export default function SignUp() {
 
     return (
         <div className="welcome">
-            <div className="signup flex">
+            <div className="signup flex sm:flex-col">
                 <div className="login-right">
                     <div className="login-container">
                         <input

@@ -296,3 +296,12 @@ p {
   font-weight: 600;
   text-align: center;
 }
+
+
+/* Responsive */
+@media screen and (max-widht:423px) {
+  .rightbox{
+    display: none;
+  }
+  
+}

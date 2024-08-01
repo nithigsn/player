@@ -4,7 +4,6 @@ import { createContext, useState, useEffect } from 'react';
 import LoginPage from './Pages/LoginPage';
 import SignUpPage from './Pages/SignUpPage';
 import ProfilePage from './Pages/ProfilePage';
-import Player from './Components/Player';
 import SettingPage from './Pages/SettingPage';
 
 
@@ -50,12 +49,13 @@ function App() {
 
     <userContext.Provider value={{ name, setName, email, setEmail, username, setUsername, password, setPassword, confirmPassword, setConfirmPassword, id, setId }}>
       <BrowserRouter>
+       
         <Routes>
           <Route path='/' element={<LoginPage />} />
           <Route path='/signup' element={<SignUpPage />} />
           <Route path='/home' element={<HomePage />} />
           <Route path='/profile' element={<ProfilePage />} />
-          <Route path='/setting' element={<SettingPage/>}/>
+          <Route path='/setting' element={<SettingPage />} />
           <Route path='*' element={<HomePage />} />
         </Routes>
       </BrowserRouter>

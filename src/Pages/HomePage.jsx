@@ -32,14 +32,14 @@ const HomePage = () => {
             case 'search':
                 return <SearchSongs />;
             case 'settings':
-                return <SettingPage/>;    
+                return <SettingPage />;
             default:
                 return <CenterBox setCenterBoxType={setCenterBoxType} />;
         }
     };
 
     return (
-        <div className="homepage flex h-screen w-screen bg-black text-white ">
+        <div className="homepage flex h-[87vh] w-screen bg-black text-white ">
             <LeftBox setCenterBoxType={setCenterBoxType} />
             <CenterPage />
             <RightBox />
