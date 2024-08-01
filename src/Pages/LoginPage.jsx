@@ -50,7 +50,7 @@ export default function Login() {
 
     return (
         <div className="welcome">
-            <div className="login sm:flex flex-col">
+            <div className="login ">
                 <div className="login-left">
                     <h1>Hello People</h1>
                     <h3>Login and Enjoy Your Favourite Music's</h3>

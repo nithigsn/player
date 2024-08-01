@@ -61,7 +61,7 @@ export default function SignUp() {
 
     return (
         <div className="welcome">
-            <div className="signup flex sm:flex-col">
+            <div className="signup flex ">
                 <div className="login-right">
                     <div className="login-container">
                         <input
