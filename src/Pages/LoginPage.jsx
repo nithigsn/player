@@ -50,12 +50,12 @@ export default function Login() {
 
     return (
         <div className="welcome">
-            <div className="login ">
+            <div className="login  h-[50vh] w-[60vw] flex bx-shadow ">
                 <div className="login-left">
                     <h1>Hello People</h1>
                     <h3>Login and Enjoy Your Favourite Music's</h3>
                 </div>
-                <div className="login-right">
+                <div className="login-right h-[50vh]">
                     <form action="">
                         <div className="login-container">
                             <input

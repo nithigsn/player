@@ -22,14 +22,6 @@ p {
 /* Welcome Page */
 
 
-
-.login {
-  height: 50vh;
-  width: 60vw;
-  display: flex;
-  box-shadow: 5px 5px 25px rgb(12, 12, 12);
-}
-
 .signup .login-right,
 .signup .login-left {
   height: 60vh;
