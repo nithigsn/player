@@ -38,7 +38,7 @@ export default function Library() {
                 }
             })
 
-    }, [id, setName, playlist])
+    }, [ playlist])
 
 
 
