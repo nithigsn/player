@@ -49,7 +49,7 @@ function App() {
   return (
 
 
-  <Analytics>
+  <>
     <userContext.Provider value={{ name, setName, email, setEmail, username, setUsername, password, setPassword, confirmPassword, setConfirmPassword, id, setId }}>
       <BrowserRouter>
         <Routes>
@@ -62,7 +62,9 @@ function App() {
         </Routes>
       </BrowserRouter>
     </userContext.Provider>
-    </Analytics>
+    <Analytics/>
+    </>
+    
 
   );
 }
