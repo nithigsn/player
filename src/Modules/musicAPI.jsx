@@ -31,37 +31,43 @@ const musicAPI = [
       songName: 'Baby doll',
       songArtist: 'Kanika Kapoor',
       songSrc: './Assets/songs/Baby doll [ slowed + reverb ] __ meet bros ,Kanika Kapoor __ jr santu.mp3',
-      songAvatar: './Assets/Images/image5.jpg'
+      songAvatar: './Assets/Images/image5.jpg',
+      songRanks:5
     },
     {
       songName: 'Soch',
       songArtist: 'Hardy Sandhu',
       songSrc: './Assets/songs/SOCH(Slowed+Reverbed) __ Hardy Sandhu.webm',
-      songAvatar: './Assets/Images/jbchanges.png'
+      songAvatar: './Assets/Images/jbchanges.png',
+      songRanks:6
     },
     {
       songName: 'Ghost',
       songArtist: 'Justin Bieber',
       songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
-      songAvatar: './Assets/Images/jbjustice.png'
+      songAvatar: './Assets/Images/jbjustice.png',
+      songRanks:7
     },
     {
       songName: 'Lovely',
       songArtist: 'Justin Bieber',
       songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
-      songAvatar: './Assets/Images/jbchanges.png'
+      songAvatar: './Assets/Images/jbchanges.png',
+      songRanks:8
     },
     {
       songName: 'Baby',
       songArtist: 'Justin Bieber',
       songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
-      songAvatar: './Assets/Images/jbjustice.png'
+      songAvatar: './Assets/Images/jbjustice.png',
+      songRanks:9
     },
     {
       songName: 'Boyfriend',
       songArtist: 'Justin Bieber',
       songSrc: './Assets/songs/Apna Bana Le - Full Audio _ Bhediya _ Varun Dhawan, Kriti Sanon_ Sachin-Jigar,Arijit Singh,Amitabh B.webm',
-      songAvatar: './Assets/Images/jbjustice.png'
+      songAvatar: './Assets/Images/jbjustice.png',
+      songRanks:10
     },
     {
       songName: 'Peaches ft Quavo',

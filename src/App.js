@@ -5,6 +5,7 @@ import LoginPage from './Pages/LoginPage';
 import SignUpPage from './Pages/SignUpPage';
 import ProfilePage from './Pages/ProfilePage';
 import SettingPage from './Pages/SettingPage';
+import { Analytics } from '@vercel/analytics/react';
 
 
 export const userContext = createContext();
@@ -47,9 +48,10 @@ function App() {
 
   return (
 
+
+  <Analytics>
     <userContext.Provider value={{ name, setName, email, setEmail, username, setUsername, password, setPassword, confirmPassword, setConfirmPassword, id, setId }}>
       <BrowserRouter>
-       
         <Routes>
           <Route path='/' element={<LoginPage />} />
           <Route path='/signup' element={<SignUpPage />} />
@@ -60,6 +62,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </userContext.Provider>
+    </Analytics>
 
   );
 }
