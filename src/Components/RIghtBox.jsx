@@ -23,7 +23,7 @@ function RightBox() {
     return (
         <div>
 
-            <div className="right-box hidden sm:flex flex-col items-center bg-[#212121]h-[87vh] w-[28vw] ">
+            <div className="right-box hidden sm:flex flex-col items-center bg-[#212121]h-[87vh] w-[28vw] bg-two ">
 
                 <div className="trend-wrap flex flex-col items-center justify-center">
                     <div className="trend-heading">
@@ -88,10 +88,10 @@ function RightBox() {
                     </div>
 
                     <div className="flex flex-col w-[40vw] ">
-                        <div className="w-[40vw] text-center">
-                            <i className='fa-solid fa-backward musicControler' onClick={handlePrevSong}></i>
-                            <i className={`fa-solid ${isAudioPlaying ? 'fa-pause-circle' : 'fa-circle-play'} playBtn`} onClick={handleAudioPlay}></i>
-                            <i className='fa-solid fa-forward musicControler' onClick={handleNextSong}></i>
+                        <div className="w-[40vw] flex gap-1 items-center justify-center ">
+                            <i className='fa-solid fa-backward musicControler text-2xl' onClick={handlePrevSong}></i>
+                            <i className={`fa-solid ${isAudioPlaying ? 'fa-pause-circle' : 'fa-circle-play'} text-2xl`} onClick={handleAudioPlay}></i>
+                            <i className='fa-solid fa-forward text-2xl ' onClick={handleNextSong}></i>
                         </div>
 
                         <div className="flex justify-center">
