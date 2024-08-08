@@ -1,9 +1,15 @@
 export default function SettingPage() {
     return (
 
-        <div className="settings h-full w-[65vw]">
+        <div className="settings h-full w-[65vw] flex flex-col items-center">
 
-            <h4>Settings Page</h4>
+            <h2>Settings</h2>
+
+            <div className="w-[65vw]">
+                <p>Change Name</p>
+            </div>
+
+
 
         </div>
     );

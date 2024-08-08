@@ -5,7 +5,7 @@ export default function Profile() {
 
     const { name, setName, id } = useContext(userContext);
     const [about, setAbout] = useState('');
-    const [playlist, setPlaylist] = useState();
+    const [playlist, setPlaylist] = useState([]);
 
 
 
@@ -26,6 +26,7 @@ export default function Profile() {
                     setAbout(result.data.about);
                     setPlaylist(result.data.playlists);
                     console.log(result.data.playlists);
+                    console.log(playlist)
 
                 }
                 else {
@@ -42,14 +43,21 @@ export default function Profile() {
 
 
 
-            <p>Name is : {name}</p>
+            <h1>Name : {name}</h1>
             <p>{about}</p>
-            <h2>Playlist</h2>
+            <h2>Playlists</h2>
             <ol>
+            {
+                playlist.map((value,index)=>{
+                    return(
+                        <div key={index}>
+                            <li>{value.playlistname}</li>
 
-
+                        </div>
+                    );
+                })
+            }
             </ol>
-
         </div>
     );
 }

@@ -28,18 +28,18 @@ const SearchSongs = () => {
 
 
     return (
-        <div className='h-screen w-[65vw]'>
+        <div className='h-screen w-[65vw] flex flex-col items-center'>
             <input
                 type="text"
                 placeholder="Search for an artist or song..."
                 value={searchTerm}
                 onChange={handleSearch}
-                className='text-black'
+                className='text-black mt-3 w-96 h-7 rounded-2xl p-4 active:outline-none active:border-none'
 
             />
             {filteredDetails.map((value, index) => (
-                <div className="" key={index} >
-                    {/* <img src={value.songAvatar} alt={`${value.songArtist} avatar`} className="artist-avatar" /> */}
+                <div className=" w-[25vw]  flex mt-4 items-center justify-between " key={index} >
+                    <div> <img src={value.songAvatar} alt={`${value.songArtist} avatar`} className="artist-avatar h-8 w-8" /></div>
                     <h4>{value.songName}</h4>
                     <p>{value.songArtist}</p>
                 </div>
